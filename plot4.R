@@ -15,7 +15,7 @@ with(DF, {
   plot(Date, Sub_metering_1, type="l",col = "black", xlab="", ylab="Energy sub metering")
   lines(Date, Sub_metering_2, col = "red")
   lines(Date, Sub_metering_3, col = "blue")
-  legend("topright", col = c("blue", "red", "green"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1)
+  legend("topright", col = c("blue", "red", "green"), bty="n",legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1)
 })
 plot(DF$Date,DF$Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
 dev.copy(png, file="plot4.png")
